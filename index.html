@@ -739,13 +739,13 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
       <button class="qbtn" onclick="chkQ(this)">정답 확인</button>
       <div class="qres"></div>
     </div>
-    <div class="qitem" data-ans="d">
+    <div class="qitem" data-ans="a">
       <div class="qq">3. =ROUND(37.849, 1)의 결과는?</div>
       <div class="qopts">
         <label><input type="radio" name="q4c"> 37.8</label>
         <label><input type="radio" name="q4c"> 38.0</label>
         <label><input type="radio" name="q4c"> 37.84</label>
-        <label><input type="radio" name="q4c"> 37.8</label>
+        <label><input type="radio" name="q4c"> 37.85</label>
       </div>
       <button class="qbtn" onclick="chkQ(this)">정답 확인</button>
       <div class="qres"></div>
@@ -1581,15 +1581,19 @@ function chkQ(btn){
   const sel=item.querySelector('input[type=radio]:checked');
   if(!sel){alert('답을 선택해 주세요!');return}
   const labels=item.querySelectorAll('label');
+  const selLabel=sel.closest('label');
+  const selIdx=Array.from(labels).indexOf(selLabel);
+  const selVal=['a','b','c','d'][selIdx];
   labels.forEach((lbl,i)=>{
+    lbl.classList.remove('correct','wrong');
     const v=['a','b','c','d'][i];
     if(v===ans)lbl.classList.add('correct');
-    else if(v===sel.value&&sel.value!==ans)lbl.classList.add('wrong');
+    else if(v===selVal&&selVal!==ans)lbl.classList.add('wrong');
   });
   const res=item.querySelector('.qres');
   res.style.display='block';
-  res.textContent=sel.value===ans?'✅ 정답입니다!':'❌ 틀렸습니다. 초록색이 정답입니다.';
-  res.style.color=sel.value===ans?'var(--gs-green-d)':'var(--gs-red)';
+  res.textContent=selVal===ans?'✅ 정답입니다!':'❌ 틀렸습니다. 초록색이 정답입니다.';
+  res.style.color=selVal===ans?'var(--gs-green-d)':'var(--gs-red)';
   btn.disabled=true;
 }
 function toggleSB(force){
