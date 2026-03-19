@@ -1791,12 +1791,11 @@ function complete(ch){
 }
 function chkQ(btn){
   const item=btn.closest('.qitem'), ans=item.dataset.ans;
-  const sel=item.querySelector('input[type=radio]:checked');
-  if(!sel){alert('답을 선택해 주세요!');return}
-  const labels=item.querySelectorAll('label');
-  const selLabel=sel.closest('label');
-  const selIdx=Array.from(labels).indexOf(selLabel);
+  const radios=Array.from(item.querySelectorAll('input[type=radio]'));
+  const selIdx=radios.findIndex(r=>r.checked);
+  if(selIdx===-1){alert('답을 선택해 주세요!');return}
   const selVal=['a','b','c','d'][selIdx];
+  const labels=item.querySelectorAll('label');
   labels.forEach((lbl,i)=>{
     lbl.classList.remove('correct','wrong');
     const v=['a','b','c','d'][i];
