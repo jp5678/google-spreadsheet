@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v20260319-104045 -->
+<!-- v20260319-104436 -->
 <html lang="ko">
 <head>
 <meta charset="UTF-8"/>
@@ -332,6 +332,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q1a" value="b"> 주소창에 sheets.new 입력</label>
         <label><input type="radio" name="q1a" value="c"> 구글 앱에서 Docs 선택</label>
         <label><input type="radio" name="q1a" value="d"> 엑셀을 열고 내보내기</label>
+        <label><input type="radio" name="q1a" value="e"> 구글 문서에서 파일 → 가져오기</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'b')">정답 확인</button>
       <div class="qres"></div>
@@ -343,6 +344,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q1b" value="b"> 글자를 굵게 만든다</label>
         <label><input type="radio" name="q1b" value="c"> 보기 → 고정 → 1행을 설정한다</label>
         <label><input type="radio" name="q1b" value="d"> 시트를 복사한다</label>
+        <label><input type="radio" name="q1b" value="e"> 파일 → 시트 설정에서 고정</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'c')">정답 확인</button>
       <div class="qres"></div>
@@ -354,6 +356,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q1c" value="b"> 5열 D번째 행</label>
         <label><input type="radio" name="q1c" value="c"> 4번째 열 5번째 시트</label>
         <label><input type="radio" name="q1c" value="d"> D시트의 5번째 칸</label>
+        <label><input type="radio" name="q1c" value="e"> 5번째 행 D번째 열</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'a')">정답 확인</button>
       <div class="qres"></div>
@@ -507,6 +510,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q2a" value="b"> 데이터 → 데이터 확인 (유효성 검사)</label>
         <label><input type="radio" name="q2a" value="c"> 셀 잠금</label>
         <label><input type="radio" name="q2a" value="d"> 수식 입력</label>
+        <label><input type="radio" name="q2a" value="e"> 도구 → 보호 설정</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'b')">정답 확인</button>
       <div class="qres"></div>
@@ -518,6 +522,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q2b" value="b"> 전치하여 붙여넣기</label>
         <label><input type="radio" name="q2b" value="c"> 값만 붙여넣기</label>
         <label><input type="radio" name="q2b" value="d"> 수식만 붙여넣기</label>
+        <label><input type="radio" name="q2b" value="e"> 수식 + 서식 함께 붙여넣기</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'c')">정답 확인</button>
       <div class="qres"></div>
@@ -643,6 +648,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q3a" value="b"> 0"℃"</label>
         <label><input type="radio" name="q3a" value="c"> #.#℃</label>
         <label><input type="radio" name="q3a" value="d"> 0.00"℃"</label>
+        <label><input type="radio" name="q3a" value="e"> #0.0"℃"</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'a')">정답 확인</button>
       <div class="qres"></div>
@@ -654,6 +660,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q3b" value="b"> 셀 배경색 수동 설정</label>
         <label><input type="radio" name="q3b" value="c"> 필터 색상</label>
         <label><input type="radio" name="q3b" value="d"> 서식 → 교대 색상</label>
+        <label><input type="radio" name="q3b" value="e"> 데이터 → 자동 색상 적용</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'d')">정답 확인</button>
       <div class="qres"></div>
@@ -801,6 +808,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q4a" value="b"> =B2+C2</label>
         <label><input type="radio" name="q4a" value="c"> =B2*C2</label>
         <label><input type="radio" name="q4a" value="d"> =B2/C2</label>
+        <label><input type="radio" name="q4a" value="e"> =B2^C2</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'c')">정답 확인</button>
       <div class="qres"></div>
@@ -812,6 +820,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q4b" value="b"> =DATEDIF(B2,TODAY(),"Y")</label>
         <label><input type="radio" name="q4b" value="c"> =NOW()-B2</label>
         <label><input type="radio" name="q4b" value="d"> =AVERAGE(B2,TODAY())</label>
+        <label><input type="radio" name="q4b" value="e"> =YEARFRAC(B2,TODAY())</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'b')">정답 확인</button>
       <div class="qres"></div>
@@ -823,6 +832,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q4c" value="b"> 38.0</label>
         <label><input type="radio" name="q4c" value="c"> 37.84</label>
         <label><input type="radio" name="q4c" value="d"> 37.85</label>
+        <label><input type="radio" name="q4c" value="e"> 37.7</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'a')">정답 확인</button>
       <div class="qres"></div>
@@ -950,6 +960,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q5a" value="b"> 숨겨짐 (데이터 유지)</label>
         <label><input type="radio" name="q5a" value="c"> 다른 시트로 이동</label>
         <label><input type="radio" name="q5a" value="d"> 회색으로 표시됨</label>
+        <label><input type="radio" name="q5a" value="e"> 선택 취소되고 빈 셀로 표시됨</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'b')">정답 확인</button>
       <div class="qres"></div>
@@ -961,6 +972,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q5b" value="b"> =COUNTIF(D2:D7, ">=38")</label>
         <label><input type="radio" name="q5b" value="c"> =FILTER(A2:I7, D2:D7>=38)</label>
         <label><input type="radio" name="q5b" value="d"> =IF(D2>=38, A2:I2, "")</label>
+        <label><input type="radio" name="q5b" value="e"> =SEARCH(">=38", D2:D7)</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'c')">정답 확인</button>
       <div class="qres"></div>
@@ -1076,6 +1088,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q6a" value="b"> 색상 척도 적용</label>
         <label><input type="radio" name="q6a" value="c"> A2:I7 선택 후 맞춤 수식 =D2>=38 입력</label>
         <label><input type="radio" name="q6a" value="d"> FILTER 함수로 추출</label>
+        <label><input type="radio" name="q6a" value="e"> D2:D7 선택 후 행 전체 강조 옵션 체크</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'c')">정답 확인</button>
       <div class="qres"></div>
@@ -1087,6 +1100,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q6b" value="b"> =AND(D2>=38, E2>=140)</label>
         <label><input type="radio" name="q6b" value="c"> =D2>=38+E2>=140</label>
         <label><input type="radio" name="q6b" value="d"> =IF(D2>=38,E2>=140)</label>
+        <label><input type="radio" name="q6b" value="e"> =BOTH(D2>=38, E2>=140)</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'b')">정답 확인</button>
       <div class="qres"></div>
@@ -1220,6 +1234,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q7a" value="b"> 원형 차트</label>
         <label><input type="radio" name="q7a" value="c"> 산점도</label>
         <label><input type="radio" name="q7a" value="d"> 거품형 차트</label>
+        <label><input type="radio" name="q7a" value="e"> 면적형 차트</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'a')">정답 확인</button>
       <div class="qres"></div>
@@ -1231,6 +1246,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q7b" value="b"> =MINICHART()</label>
         <label><input type="radio" name="q7b" value="c"> =SPARKLINE()</label>
         <label><input type="radio" name="q7b" value="d"> =INLINE()</label>
+        <label><input type="radio" name="q7b" value="e"> =MINICELL()</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'c')">정답 확인</button>
       <div class="qres"></div>
@@ -1371,6 +1387,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q8a" value="b"> IFS 함수</label>
         <label><input type="radio" name="q8a" value="c"> COUNTIF 함수</label>
         <label><input type="radio" name="q8a" value="d"> VLOOKUP 함수</label>
+        <label><input type="radio" name="q8a" value="e"> SWITCH 함수</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'b')">정답 확인</button>
       <div class="qres"></div>
@@ -1382,6 +1399,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q8b" value="b"> =IF(VLOOKUP(L2,A2:I7,4,0)=0,"미등록",VLOOKUP(L2,A2:I7,4,0))</label>
         <label><input type="radio" name="q8b" value="c"> =IFERROR(VLOOKUP(L2,A2:I7,4,0),"미등록")</label>
         <label><input type="radio" name="q8b" value="d"> =COUNTIF(B2:B7,L2)</label>
+        <label><input type="radio" name="q8b" value="e"> =MATCH(L2, B2:B7, 0)</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'c')">정답 확인</button>
       <div class="qres"></div>
@@ -1535,6 +1553,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q9a" value="b"> 피벗 테이블</label>
         <label><input type="radio" name="q9a" value="c"> 조건부 서식</label>
         <label><input type="radio" name="q9a" value="d"> FILTER 함수</label>
+        <label><input type="radio" name="q9a" value="e"> 차트 삽입</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'b')">정답 확인</button>
       <div class="qres"></div>
@@ -1546,6 +1565,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q9b" value="b"> =FILTER()</label>
         <label><input type="radio" name="q9b" value="c"> =INDEX()</label>
         <label><input type="radio" name="q9b" value="d"> =IMPORTRANGE()</label>
+        <label><input type="radio" name="q9b" value="e"> =IMPORTDATA()</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'d')">정답 확인</button>
       <div class="qres"></div>
@@ -1699,6 +1719,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q10a" value="b"> 데이터 → AI 분석</label>
         <label><input type="radio" name="q10a" value="c"> 오른쪽 상단 Gemini 아이콘 클릭 또는 셀에 @Gemini 입력</label>
         <label><input type="radio" name="q10a" value="d"> 확장 프로그램 → Gemini 설치</label>
+        <label><input type="radio" name="q10a" value="e"> 도구 → Gemini for Workspace 실행</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'c')">정답 확인</button>
       <div class="qres"></div>
@@ -1710,6 +1731,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
         <label><input type="radio" name="q10b" value="b"> "A열 날짜, D열 체온(숫자) 데이터가 있고, 체온 38 이상이면 '발열', 아니면 '정상'을 E열에 표시하는 수식 알려줘"</label>
         <label><input type="radio" name="q10b" value="c"> "IF 함수 설명해줘"</label>
         <label><input type="radio" name="q10b" value="d"> "구글 스프레드시트 사용법 알려줘"</label>
+        <label><input type="radio" name="q10b" value="e"> 구글 스프레드시트 수식 작성 방법을 전반적으로 설명해줘</label>
       </div>
       <button class="qbtn" onclick="chkQ(this,'b')">정답 확인</button>
       <div class="qres"></div>
@@ -1798,20 +1820,16 @@ function chkQ(btn, ans){
   const labels=Array.from(item.querySelectorAll('label'));
   const selIdx=labels.findIndex(lbl=>lbl.querySelector('input').checked);
   if(selIdx===-1){alert('답을 선택해 주세요!');return}
-  const selVal=['a','b','c','d'][selIdx];
-  const ansIdx=['a','b','c','d'].indexOf(ans);
+  const vals=['a','b','c','d','e'];
+  const ansIdx=vals.indexOf(ans);
   labels.forEach((lbl,i)=>{
-    lbl.classList.remove('correct','wrong','selected');
+    lbl.classList.remove('correct','wrong');
     if(i===ansIdx) lbl.classList.add('correct');
-    else if(i===selIdx) lbl.classList.add('wrong');
+    else if(i===selIdx && i!==ansIdx) lbl.classList.add('wrong');
   });
   const res=item.querySelector('.qres');
   res.style.display='block';
-  if(selVal===ans){
-    res.innerHTML='<span style="color:#0B8043;font-size:14px">✅ 정답입니다!</span>';
-  } else {
-    res.innerHTML='<span style="color:#D93025;font-size:14px">❌ 틀렸습니다. 초록색이 정답입니다.</span>';
-  }
+  res.innerHTML='<span style="color:#0B8043;font-size:13.5px;font-weight:600">💚 초록색이 정답입니다.</span>';
   btn.disabled=true;
 }
 function toggleSB(force){
