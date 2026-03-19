@@ -147,6 +147,19 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
   .ch-grid{grid-template-columns:1fr}
   #main{padding:56px 12px 60px}
 }
+
+/* ── FILE CARD ── */
+.file-card{background:#fff;border:2px solid var(--gs-green);border-radius:14px;padding:20px;margin:22px 0}
+.fc-top{display:flex;align-items:center;gap:14px;margin-bottom:11px}
+.fc-icon-wrap{width:46px;height:46px;border-radius:10px;background:var(--gs-green-l);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+.fc-label{font-size:10px;font-weight:700;color:var(--gs-green-d);letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+.fc-name{font-size:14px;font-weight:700;color:var(--g900)}
+.fc-desc{font-size:13px;color:var(--g600);line-height:1.65;margin-bottom:13px}
+.fc-btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.fc-dl{display:inline-flex;align-items:center;gap:7px;background:var(--gs-green);color:#fff;border-radius:8px;padding:9px 20px;font-size:13px;font-weight:600;text-decoration:none;transition:background .15s}
+.fc-dl:hover{background:var(--gs-green-d)}
+.fc-how{background:var(--g50);border:1px solid var(--g200);border-radius:8px;padding:11px 14px;font-size:12.5px;color:var(--g600);line-height:1.8}
+.fc-how strong{color:var(--g800)}
 </style>
 </head>
 <body>
@@ -354,6 +367,26 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     </ol>
   </div>
 
+
+  <div class="file-card">
+    <div class="fc-top">
+      <div class="fc-icon-wrap">📂</div>
+      <div>
+        <div class="fc-label">챕터 1 실습 파일</div>
+        <div class="fc-name">ch1_practice.csv</div>
+      </div>
+    </div>
+    <p class="fc-desc">활력징후 기록표 기본 틀이 담긴 파일입니다. 직접 시트 설정(틀 고정·탭 이름·날짜 자동 채우기)을 적용해 보세요.</p>
+    <div class="fc-btns">
+      <a class="fc-dl" href="practice/ch1_practice.csv" download="ch1_practice.csv">⬇ CSV 다운로드</a>
+    </div>
+    <div class="fc-how">
+      <strong>📋 구글 시트에서 여는 방법</strong><br>
+      ① 위 버튼으로 CSV 파일을 다운로드<br>
+      ② <a href="https://drive.google.com" target="_blank" style="color:var(--gs-blue)">drive.google.com</a> 열기 → 파일을 드래그 앤 드롭으로 업로드<br>
+      ③ 업로드된 파일 우클릭 → <strong>Google 스프레드시트로 열기</strong>
+    </div>
+  </div>
   <div class="nav-btns">
     <button class="nbtn" disabled>← 이전</button>
     <button class="cbtn" onclick="complete('ch1')">✓ 챕터 완료</button>
@@ -498,6 +531,26 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     </ol>
   </div>
 
+
+  <div class="file-card">
+    <div class="fc-top">
+      <div class="fc-icon-wrap">📂</div>
+      <div>
+        <div class="fc-label">챕터 2 실습 파일</div>
+        <div class="fc-name">ch2_practice.csv</div>
+      </div>
+    </div>
+    <p class="fc-desc">10명의 환자 활력징후 데이터가 입력되어 있습니다. 오류 값을 찾아 데이터 유효성 검사로 수정하고, 자동 채우기를 연습해 보세요.</p>
+    <div class="fc-btns">
+      <a class="fc-dl" href="practice/ch2_practice.csv" download="ch2_practice.csv">⬇ CSV 다운로드</a>
+    </div>
+    <div class="fc-how">
+      <strong>📋 구글 시트에서 여는 방법</strong><br>
+      ① 위 버튼으로 CSV 파일을 다운로드<br>
+      ② <a href="https://drive.google.com" target="_blank" style="color:var(--gs-blue)">drive.google.com</a> 열기 → 파일을 드래그 앤 드롭으로 업로드<br>
+      ③ 업로드된 파일 우클릭 → <strong>Google 스프레드시트로 열기</strong>
+    </div>
+  </div>
   <div class="nav-btns">
     <button class="nbtn" onclick="goTo('ch1')">← 이전</button>
     <button class="cbtn" onclick="complete('ch2')">✓ 챕터 완료</button>
@@ -615,6 +668,26 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     </ol>
   </div>
 
+
+  <div class="file-card">
+    <div class="fc-top">
+      <div class="fc-icon-wrap">📂</div>
+      <div>
+        <div class="fc-label">챕터 3 실습 파일</div>
+        <div class="fc-name">ch3_practice.csv</div>
+      </div>
+    </div>
+    <p class="fc-desc">서식이 전혀 없는 원시 데이터입니다. 머리글 배경색·테두리·숫자 서식·교대 색상 등을 직접 적용해 전문적인 표를 완성해 보세요.</p>
+    <div class="fc-btns">
+      <a class="fc-dl" href="practice/ch3_practice.csv" download="ch3_practice.csv">⬇ CSV 다운로드</a>
+    </div>
+    <div class="fc-how">
+      <strong>📋 구글 시트에서 여는 방법</strong><br>
+      ① 위 버튼으로 CSV 파일을 다운로드<br>
+      ② <a href="https://drive.google.com" target="_blank" style="color:var(--gs-blue)">drive.google.com</a> 열기 → 파일을 드래그 앤 드롭으로 업로드<br>
+      ③ 업로드된 파일 우클릭 → <strong>Google 스프레드시트로 열기</strong>
+    </div>
+  </div>
   <div class="nav-btns">
     <button class="nbtn" onclick="goTo('ch2')">← 이전</button>
     <button class="cbtn" onclick="complete('ch3')">✓ 챕터 완료</button>
@@ -764,6 +837,26 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     </ol>
   </div>
 
+
+  <div class="file-card">
+    <div class="fc-top">
+      <div class="fc-icon-wrap">📂</div>
+      <div>
+        <div class="fc-label">챕터 4 실습 파일</div>
+        <div class="fc-name">ch4_practice.csv</div>
+      </div>
+    </div>
+    <p class="fc-desc">환자 체중과 처방 용량 데이터가 있습니다. 1회 투여량·평균동맥압·재원일수 등 간호 실무 수식을 직접 입력해 보세요.</p>
+    <div class="fc-btns">
+      <a class="fc-dl" href="practice/ch4_practice.csv" download="ch4_practice.csv">⬇ CSV 다운로드</a>
+    </div>
+    <div class="fc-how">
+      <strong>📋 구글 시트에서 여는 방법</strong><br>
+      ① 위 버튼으로 CSV 파일을 다운로드<br>
+      ② <a href="https://drive.google.com" target="_blank" style="color:var(--gs-blue)">drive.google.com</a> 열기 → 파일을 드래그 앤 드롭으로 업로드<br>
+      ③ 업로드된 파일 우클릭 → <strong>Google 스프레드시트로 열기</strong>
+    </div>
+  </div>
   <div class="nav-btns">
     <button class="nbtn" onclick="goTo('ch3')">← 이전</button>
     <button class="cbtn" onclick="complete('ch4')">✓ 챕터 완료</button>
@@ -880,6 +973,26 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     </ol>
   </div>
 
+
+  <div class="file-card">
+    <div class="fc-top">
+      <div class="fc-icon-wrap">📂</div>
+      <div>
+        <div class="fc-label">챕터 5 실습 파일</div>
+        <div class="fc-name">ch5_practice.csv</div>
+      </div>
+    </div>
+    <p class="fc-desc">2일치 20명 활력징후 데이터입니다. 다중 정렬, 조건별 필터링, FILTER 함수로 발열 환자만 추출하는 실습을 해 보세요.</p>
+    <div class="fc-btns">
+      <a class="fc-dl" href="practice/ch5_practice.csv" download="ch5_practice.csv">⬇ CSV 다운로드</a>
+    </div>
+    <div class="fc-how">
+      <strong>📋 구글 시트에서 여는 방법</strong><br>
+      ① 위 버튼으로 CSV 파일을 다운로드<br>
+      ② <a href="https://drive.google.com" target="_blank" style="color:var(--gs-blue)">drive.google.com</a> 열기 → 파일을 드래그 앤 드롭으로 업로드<br>
+      ③ 업로드된 파일 우클릭 → <strong>Google 스프레드시트로 열기</strong>
+    </div>
+  </div>
   <div class="nav-btns">
     <button class="nbtn" onclick="goTo('ch4')">← 이전</button>
     <button class="cbtn" onclick="complete('ch5')">✓ 챕터 완료</button>
@@ -987,6 +1100,26 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     </ol>
   </div>
 
+
+  <div class="file-card">
+    <div class="fc-top">
+      <div class="fc-icon-wrap">📂</div>
+      <div>
+        <div class="fc-label">챕터 6 실습 파일</div>
+        <div class="fc-name">ch6_practice.csv</div>
+      </div>
+    </div>
+    <p class="fc-desc">정상·비정상 수치가 혼재된 데이터입니다. 체온 발열 강조·낙상 위험 행 전체 하이라이트·혈압 색상 척도를 적용해 보세요.</p>
+    <div class="fc-btns">
+      <a class="fc-dl" href="practice/ch6_practice.csv" download="ch6_practice.csv">⬇ CSV 다운로드</a>
+    </div>
+    <div class="fc-how">
+      <strong>📋 구글 시트에서 여는 방법</strong><br>
+      ① 위 버튼으로 CSV 파일을 다운로드<br>
+      ② <a href="https://drive.google.com" target="_blank" style="color:var(--gs-blue)">drive.google.com</a> 열기 → 파일을 드래그 앤 드롭으로 업로드<br>
+      ③ 업로드된 파일 우클릭 → <strong>Google 스프레드시트로 열기</strong>
+    </div>
+  </div>
   <div class="nav-btns">
     <button class="nbtn" onclick="goTo('ch5')">← 이전</button>
     <button class="cbtn" onclick="complete('ch6')">✓ 챕터 완료</button>
@@ -1110,6 +1243,26 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     </ol>
   </div>
 
+
+  <div class="file-card">
+    <div class="fc-top">
+      <div class="fc-icon-wrap">📂</div>
+      <div>
+        <div class="fc-label">챕터 7 실습 파일</div>
+        <div class="fc-name">ch7_practice.csv</div>
+      </div>
+    </div>
+    <p class="fc-desc">7일간 환자별 체온·혈압 추이 데이터와 병동별 통계 데이터입니다. 꺾은선·막대·복합 차트와 SPARKLINE 미니 차트를 만들어 보세요.</p>
+    <div class="fc-btns">
+      <a class="fc-dl" href="practice/ch7_practice.csv" download="ch7_practice.csv">⬇ CSV 다운로드</a>
+    </div>
+    <div class="fc-how">
+      <strong>📋 구글 시트에서 여는 방법</strong><br>
+      ① 위 버튼으로 CSV 파일을 다운로드<br>
+      ② <a href="https://drive.google.com" target="_blank" style="color:var(--gs-blue)">drive.google.com</a> 열기 → 파일을 드래그 앤 드롭으로 업로드<br>
+      ③ 업로드된 파일 우클릭 → <strong>Google 스프레드시트로 열기</strong>
+    </div>
+  </div>
   <div class="nav-btns">
     <button class="nbtn" onclick="goTo('ch6')">← 이전</button>
     <button class="cbtn" onclick="complete('ch7')">✓ 챕터 완료</button>
@@ -1242,6 +1395,26 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     </ol>
   </div>
 
+
+  <div class="file-card">
+    <div class="fc-top">
+      <div class="fc-icon-wrap">📂</div>
+      <div>
+        <div class="fc-label">챕터 8 실습 파일</div>
+        <div class="fc-name">ch8_practice.csv</div>
+      </div>
+    </div>
+    <p class="fc-desc">IF·IFS·COUNTIF·AVERAGEIF·VLOOKUP·IFERROR 함수를 실제 환자 데이터에 적용해 자동 판정 시스템을 구축해 보세요.</p>
+    <div class="fc-btns">
+      <a class="fc-dl" href="practice/ch8_practice.csv" download="ch8_practice.csv">⬇ CSV 다운로드</a>
+    </div>
+    <div class="fc-how">
+      <strong>📋 구글 시트에서 여는 방법</strong><br>
+      ① 위 버튼으로 CSV 파일을 다운로드<br>
+      ② <a href="https://drive.google.com" target="_blank" style="color:var(--gs-blue)">drive.google.com</a> 열기 → 파일을 드래그 앤 드롭으로 업로드<br>
+      ③ 업로드된 파일 우클릭 → <strong>Google 스프레드시트로 열기</strong>
+    </div>
+  </div>
   <div class="nav-btns">
     <button class="nbtn" onclick="goTo('ch7')">← 이전</button>
     <button class="cbtn" onclick="complete('ch8')">✓ 챕터 완료</button>
@@ -1385,6 +1558,26 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     </ol>
   </div>
 
+
+  <div class="file-card">
+    <div class="fc-top">
+      <div class="fc-icon-wrap">📂</div>
+      <div>
+        <div class="fc-label">챕터 9 실습 파일</div>
+        <div class="fc-name">ch9_practice.csv</div>
+      </div>
+    </div>
+    <p class="fc-desc">20명 환자 다부서 데이터입니다. 피벗 테이블로 병동별 통계 분석, 드롭다운 유효성 검사, 범위 보호를 실습해 보세요.</p>
+    <div class="fc-btns">
+      <a class="fc-dl" href="practice/ch9_practice.csv" download="ch9_practice.csv">⬇ CSV 다운로드</a>
+    </div>
+    <div class="fc-how">
+      <strong>📋 구글 시트에서 여는 방법</strong><br>
+      ① 위 버튼으로 CSV 파일을 다운로드<br>
+      ② <a href="https://drive.google.com" target="_blank" style="color:var(--gs-blue)">drive.google.com</a> 열기 → 파일을 드래그 앤 드롭으로 업로드<br>
+      ③ 업로드된 파일 우클릭 → <strong>Google 스프레드시트로 열기</strong>
+    </div>
+  </div>
   <div class="nav-btns">
     <button class="nbtn" onclick="goTo('ch8')">← 이전</button>
     <button class="cbtn" onclick="complete('ch9')">✓ 챕터 완료</button>
@@ -1535,6 +1728,26 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     <p style="font-size:14px;color:var(--g600);line-height:1.8">기초부터 고급 기능, 생성형 AI 활용까지 모두 배웠습니다.<br>배운 기술을 실무에 꾸준히 적용하면 간호 업무 효율이 크게 향상됩니다.<br><strong>수고하셨습니다! 🏥</strong></p>
   </div>
 
+
+  <div class="file-card">
+    <div class="fc-top">
+      <div class="fc-icon-wrap">📂</div>
+      <div>
+        <div class="fc-label">챕터 10 실습 파일</div>
+        <div class="fc-name">ch10_practice.csv</div>
+      </div>
+    </div>
+    <p class="fc-desc">AI 판정 열이 비어있는 환자 데이터입니다. Gemini에게 수식을 요청하고, Smart Fill로 간호 메모를 자동 완성해 보세요.</p>
+    <div class="fc-btns">
+      <a class="fc-dl" href="practice/ch10_practice.csv" download="ch10_practice.csv">⬇ CSV 다운로드</a>
+    </div>
+    <div class="fc-how">
+      <strong>📋 구글 시트에서 여는 방법</strong><br>
+      ① 위 버튼으로 CSV 파일을 다운로드<br>
+      ② <a href="https://drive.google.com" target="_blank" style="color:var(--gs-blue)">drive.google.com</a> 열기 → 파일을 드래그 앤 드롭으로 업로드<br>
+      ③ 업로드된 파일 우클릭 → <strong>Google 스프레드시트로 열기</strong>
+    </div>
+  </div>
   <div class="nav-btns">
     <button class="nbtn" onclick="goTo('ch9')">← 이전</button>
     <button class="cbtn" onclick="complete('ch10')">✓ 챕터 완료</button>
