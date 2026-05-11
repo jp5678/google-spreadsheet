@@ -918,15 +918,15 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
       <li><span class="sn">2</span><div>각 헤더에 ▼ 버튼 생성 확인</div></li>
       <li><span class="sn">3</span><div>체온 열 ▼ 클릭 → <strong>"조건으로 필터링"</strong> → <strong>"보다 크거나 같음"</strong> → <strong>38</strong></div></li>
       <li><span class="sn">4</span><div><strong>확인</strong> → 체온 38 이상인 행만 표시</div></li>
-      <li><span class="sn">5</span><div>필터 해제: <strong>데이터 → 필터 해제</strong></div></li>
+      <li><span class="sn">5</span><div>필터 삭제: <strong>데이터 → 필터 삭제</strong></div></li>
     </ol>
 
     <h4>📌 필터 보기 (여러 필터 저장)</h4>
     <div class="box concept">필터 보기를 사용하면 여러 필터 설정을 저장해두고 필요할 때 빠르게 전환할 수 있습니다.</div>
     <ol class="steps">
-      <li><span class="sn">1</span><div><strong>데이터 → 필터 보기 → 새 필터 보기 만들기</strong></div></li>
+      <li><span class="sn">1</span><div><strong>데이터 → 필터 보기 만들기</strong></div></li>
       <li><span class="sn">2</span><div>필터 조건 설정 후 이름 지정 (예: "발열 환자", "고혈압 환자")</div></li>
-      <li><span class="sn">3</span><div>나중에 <strong>데이터 → 필터 보기 → [이름]</strong>으로 즉시 전환</div></li>
+      <li><span class="sn">3</span><div>나중에 <strong>데이터 → 뷰 변경 → [이름]</strong>으로 즉시 전환</div></li>
     </ol>
     <div class="box nursing"><div class="nl">🏥 간호 실무 활용</div>
       • "발열 환자": 체온 ≥ 38.0<br>
@@ -948,7 +948,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     <p style="font-size:13px;color:var(--g600);margin:5px 0 5px">→ 체온이 38 이상인 행만 추출</p>
     <div class="formula">=FILTER(A2:I7, (D2:D7>=38)*(E2:E7>=140))</div>
     <p style="font-size:13px;color:var(--g600);margin:5px 0 14px">→ 체온 ≥ 38 AND 수축기혈압 ≥ 140 (두 조건 동시 만족)</p>
-    <div class="box tip">💡 <strong>FILTER 함수</strong>는 결과가 여러 행으로 자동 확장되는 <strong>동적 배열 함수</strong>입니다. 결과가 들어갈 공간이 비어있어야 합니다.</div>
+    <div class="box tip">💡 <strong>FILTER 함수</strong>는 결과가 여러 행으로 자동 확장되는 <strong>동적 배열 함수</strong>입니다. 결과가 들어갈 공간이 비어 있어야 합니다.</div>
   </div>
 
   <div class="quiz-section">
