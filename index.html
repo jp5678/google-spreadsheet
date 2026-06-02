@@ -1482,21 +1482,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     </div>
   </div>
 
-  <div class="card">
-    <h3>📋 고급 데이터 유효성 검사</h3>
-    <h4>드롭다운 + 다른 시트 목록 연동</h4>
-    <ol class="steps">
-      <li><span class="sn">1</span><div>"목록" 시트를 만들고 A열에 허용 값 목록을 입력: 내과, 외과, 소아과, 산부인과, 응급</div></li>
-      <li><span class="sn">2</span><div>유효성 검사 적용 셀 선택 → <strong>데이터 → 데이터 확인</strong></div></li>
-      <li><span class="sn">3</span><div>기준: <strong>"범위 내 목록"</strong> → 범위: <strong>목록!A1:A5</strong></div></li>
-    </ol>
-    <h4>종속 드롭다운 (연계 목록)</h4>
-    <div class="formula">=INDIRECT(A2)</div>
-    <p style="font-size:13px;color:var(--g600);margin:5px 0">A2에 선택된 값(예: "내과")을 시트 이름으로 사용해 그 시트의 목록을 가져옵니다.</p>
-    <div class="box tip">💡 <strong>실무 응용:</strong> 병동 선택 드롭다운 → 해당 병동 소속 간호사 목록 자동 연동</div>
-  </div>
-
-  <div class="card">
+    <div class="card">
     <h3>🔗 IMPORTRANGE — 다른 파일 데이터 가져오기</h3>
     <div class="box concept">다른 구글 스프레드시트 파일의 데이터를 실시간으로 가져올 수 있습니다.</div>
     <div class="formula">=IMPORTRANGE("스프레드시트URL", "시트명!A1:I100")</div>
