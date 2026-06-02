@@ -1420,7 +1420,7 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     <ol>
       <li>새 시트 "낙상위험도"를 만들고 컬럼 구성: 환자명 / 나이 / 이전낙상력(0/25) / 보조기구(0/15) / 정맥주사(0/20) / 보행장애(0/10/20) / 인지상태(0/15) / 총점</li>
       <li>총점 열: <code>=SUM(C2:G2)</code> 수식 입력</li>
-      <li>위험도 판정 열: <code>=IFS(H2>=45,"고위험",H2>=25,"중위험",H2>=0,"저위험")</code></li>
+      <li>위험도 판정 열: <code>=IFS(H2>=45,"고위험",H2>=25,"중위험",H2>=0,TRUE,"저위험")</code></li>
       <li>요약 표: <code>=COUNTIF(I2:I11,"고위험")</code>로 각 위험도별 환자 수 집계</li>
       <li>활력징후 시트에 환자 검색 기능: L1에 환자번호 입력 → M1에 <code>=IFERROR(VLOOKUP(L1,B2:I7,3,0),"없음")</code>으로 체온 조회</li>
     </ol>
