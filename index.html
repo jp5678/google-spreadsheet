@@ -1325,7 +1325,10 @@ kbd{background:var(--g100);border:1px solid var(--g200);border-radius:4px;paddin
     <h4>낙상 위험도 자동 평가</h4>
     <div class="formula">=IFS(J2>=13,"고위험", J2>=7,"중위험", J2>=0,"저위험")</div>
     <p style="font-size:13px;color:var(--g600);margin-top:5px">J열 = Morse 낙상 위험도 점수</p>
-  </div>
+    <div class="formula">=IFS(J2>=13,"고위험", J2>=7,"중위험", J2>=0,"저위험", TRUE, "데이터 오류")</div>
+    <p style="font-size:13px;color:var(--g600);margin-top:5px">만약 J2 셀에 음수가 들어가거나 빈 칸일 경우, 현재 수식에서는 일치하는 조건이 없어 #N/A 에러가 발생할 수 있습니다.
+이를 방지하기 위해 "그 외의 모든 경우"를 처리하는 예외 조항을 맨 뒤에 붙여주면 더 안전한 수식이 됩니다.더 안전하게 보완한 수식: 맨 뒤에 TRUE, "값"을 넣으면, 앞의 조건에 모두 해당하지 않을 때 나올 기본값을 지정할 수 있습니다.J열 = Morse 낙상 위험도 점수</p>
+    </div>
 
   <div class="card">
     <h3>🔢 COUNTIF / COUNTIFS — 조건부 개수</h3>
